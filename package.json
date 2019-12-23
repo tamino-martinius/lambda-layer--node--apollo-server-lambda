@@ -1,0 +1,33 @@
+{
+  "name": "lambda-layer--node--apollo-server-lambda",
+  "description": "AWS Lambda Layer for Node.js with Apollo Server for AWS Lambda",
+  "version": "2.505.0",
+  "keywords": [
+    "aws",
+    "lambda",
+    "layer",
+    "node",
+    "nodejs",
+    "graphql",
+    "apollo",
+    "gql",
+    "serverless",
+    "lambda layer version"
+  ],
+  "author": "Tamino Martinius <dev@zaku.eu>",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamino-martinius/lambda-layer--node--apollo-server-lambda.git"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "scripts": {
+    "prezip": "cd nodejs && npm ci; rm dist/nodejs.zip || true",
+    "zip": "zip dist/nodejs.zip nodejs -r"
+  }
+}
